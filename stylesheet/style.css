@@ -61,6 +61,8 @@ nav li a {
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
+    gap: 70px;
+    border: 2px solid tomato;
 }
 
 .banner-title {
@@ -68,6 +70,11 @@ nav li a {
     font-size: 3.25rem;
     font-weight: 700;
 }
+
+/* .container{
+     width: 50%; 
+     margin-bottom: 320px; 
+}  */
 
 .banner-description {
     color: #3A3A3A;
@@ -92,13 +99,18 @@ nav li a {
 }
 
 .image-container {
+    /* width: 50%;  */
     width: 475px;
     height: 475px;
     border-radius: 475px;
     border: 3px solid #F1E4FF;
+    margin-top: 25px;
 }
 
-#img1 {
+/* #img1{
+      
+} */
+#img2 {
     /* background-repeat: no-repeat; */
     position: relative;
     bottom: 450px;
@@ -113,7 +125,14 @@ height: 414px; */
     background-color: #FFF;
     display: flex;
     justify-content: space-evenly;
+    /* align-items: center; */
     margin-top: 70px;
+    padding: 10px;
+}
+
+.image {
+    width: 95px;
+    height: 35px;
 }
 
 /* Cart section style Start */
@@ -192,8 +211,13 @@ height: 414px; */
 .feature-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 70px 100px;
+}
+
+.feature-image {
+    width: 404px;
+    border-radius: 7px;
 }
 
 .banner-title-1 {
@@ -259,3 +283,91 @@ footer {
 
 
 /* Footer section style End */
+
+
+/* Responsive style start */
+@media screen and (max-width:576Px) {
+
+
+
+    /* Header section Responsive style */
+    nav {
+        flex-direction: column;
+        margin-top: 4%;
+    }
+
+    nav>ul {
+        flex-direction: column;
+    }
+
+
+    /* Camera section Style */
+    .section {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .container {
+        order: 2;
+        /* width: 100%; */
+    }
+
+    .image-container {
+        order: 1;
+        /* width: 100%;  */
+    }
+
+    .banner-description {
+        width: auto;
+    }
+
+    /* Camera section Style End */
+    .company {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+
+    /* cart section style */
+    .img-container {
+
+        grid-template-columns: 1fr;
+    }
+
+    .cart {
+        width: 100%;
+    }
+
+    /* cart section End */
+    /* Feature section style */
+    .feature-container {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 20px;
+    }
+
+    .container-1 {
+        width: 100%;
+        align-items: center;
+        order: 1;
+    }
+
+    .banner-description-1 {
+        width: 100%;
+    }
+
+    .feature-image {
+        width: 100%;
+        /* margin-left: 10px; */
+        order: 2;
+    }
+
+    /* Main section Responsive style start */
+
+
+
+
+
+}
